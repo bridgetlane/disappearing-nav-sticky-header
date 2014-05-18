@@ -1,0 +1,110 @@
+<!-- *****************************************************
+Disappearing Navigational Sticky Header for Foundation 5
+Written by Bridget Lane using Foundation 5.2.2
+
+Includes improvements to head, simple page framework, body
+layout, and css for a navigational sticky header that 
+disappears when scrolling
+
+mason.gmu.edu/~blane3
+****************************************************** -->
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Sticky Header" />
+    
+    <title>Disappearing Navigational Sticky Header</title>
+
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/foundation-icons.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    
+    <script src="js/vendor/modernizr.js"></script>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>    
+  </head>
+  <body>
+    
+    <!-- Here is the header section of the webpage, it is built to navigate to other places in the webpage using nav -->
+    <div id="header">
+        <nav>
+            <div class="row">
+              <!-- Class left will appear on the left side of the header  -->
+              <div class="small-3 columns">
+                <h1 class="left"><a href="#home" class="linked" Title="Home">Sticky Header</h1>
+              </div>
+              <div class="small-8 columns">
+                    <!-- The list elements of class right appear on the right side of the header. There can be four list elements using header size h1 -->
+                    <ul>
+                        <li><h1 class="right"><a href="#Section4" class="linked" Title="Section 4">Section 4</a></h1></li>
+                        <li><h1 class="right"><a href="#Section3" class="linked" Title="Section 3">Section 3</a></h1></li>
+                        <li><h1 class="right"><a href="#Section2" class="linked" Title="Section 2">Section 2</a></h1></li>
+                        <li><h1 class="right"><a href="#Section1" class="linked" Title="Section 1">Section 1</a></h1></li>
+                    </ul>
+              </div>
+            </div>
+        </nav>
+    </div>
+    
+    <!-- Body content goes here -->
+    <div id="home">
+    
+        <!-- An example of breaking up text by nav sections -->
+        <p class="paragraph">
+        
+        <text id="Section1">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum aliquam nunc, vel egestas felis molestie et. Quisque ac hendrerit neque. Sed eget sem egestas, fermentum mi et, consectetur sem. Nunc vestibulum leo venenatis sapien lacinia cursus. Sed eros felis, porta non tincidunt sed, posuere a lacus. Fusce pulvinar urna arcu, placerat tempor enim dictum et. Nam consequat purus erat, id tincidunt risus cursus nec. Curabitur ut nisl id ante porta ultrices. Maecenas a imperdiet metus, quis rhoncus lectus.
+        Fusce id dignissim est. Ut tempus, magna et blandit blandit, enim felis facilisis velit, ac adipiscing elit neque et lacus. Donec dignissim dapibus lacus, non porttitor ante. Maecenas id pharetra justo, quis interdum ipsum. Curabitur vitae velit eros. Mauris pellentesque purus non eros ullamcorper sagittis. Mauris orci justo, hendrerit a scelerisque eu, euismod id mi. Vestibulum placerat est justo, sed fringilla sapien laoreet vel. Suspendisse eu mi ac nisi venenatis interdum. Praesent sodales blandit ullamcorper. Suspendisse vitae nunc imperdiet, adipiscing orci et, tempor felis. Donec a libero facilisis, rhoncus tellus eu, porttitor erat. Mauris in neque ut turpis accumsan hendrerit in ornare nulla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis viverra diam sodales nisl posuere euismod ut et libero. Suspendisse consectetur, massa vitae pulvinar venenatis, risus nibh sollicitudin augue, at egestas eros augue vitae nisi.
+        <br><br>
+        </text>
+        <text id="Section2">
+        Proin sit amet tristique metus, molestie condimentum neque. Fusce sed ante et sem aliquet pulvinar. Nam egestas est vel sodales auctor. Aliquam eget vulputate nisi. Curabitur at mauris ac magna pulvinar facilisis. Donec posuere nisi nunc, at imperdiet sem laoreet nec. Pellentesque vulputate nisi eu risus porttitor euismod. Duis orci quam, consectetur sit amet lectus a, sagittis vestibulum arcu. Pellentesque sodales sapien in eleifend congue. In luctus pellentesque massa. Proin adipiscing eu erat et dictum. Phasellus lacinia at elit vitae facilisis. Nulla tristique, turpis accumsan fermentum euismod, nisi nisl sagittis purus, feugiat laoreet augue sapien cursus nunc. In ac laoreet purus. Mauris ut lectus quis lectus accumsan dignissim.
+        Quisque interdum metus in tellus fermentum, non viverra elit tristique. Nullam id odio justo. Praesent venenatis dapibus mauris, non semper nisi feugiat sit amet. Phasellus et neque non lorem pulvinar tristique. Mauris at sapien eleifend, sollicitudin augue vitae, volutpat tellus. Pellentesque sit amet facilisis libero. Aenean sit amet augue in mi gravida lobortis quis nec odio. Suspendisse ullamcorper volutpat odio, sed viverra ante tincidunt a. Sed sit amet placerat elit. Donec lectus est, fringilla commodo auctor et, eleifend sed neque.
+        <br><br>
+        </text>
+        <text id="Section3">
+        Ut non sem lobortis nisi consequat aliquet. Fusce mattis lectus turpis, ut tempus risus semper a. Maecenas ante enim, lacinia sit amet tellus in, tristique gravida nisi. Nunc semper convallis lacinia. In turpis ipsum, iaculis ac turpis at, suscipit sollicitudin metus. Praesent ut ante a quam molestie tristique. Morbi libero ante, ultrices ac odio sit amet, vehicula placerat massa. Vestibulum ac fringilla erat. Quisque cursus vel sapien ut imperdiet. Praesent libero lacus, rhoncus vestibulum lobortis quis, rhoncus a libero. Maecenas sit amet neque sed nulla dictum imperdiet. In hendrerit commodo tellus eget dignissim.
+        Aenean gravida pharetra pretium. Ut euismod risus eget condimentum venenatis. Aenean elit magna, ultrices quis arcu accumsan, vestibulum gravida orci. Aliquam dolor dolor, egestas vel quam id, semper faucibus est. Sed auctor erat odio, quis scelerisque lacus sagittis vitae. Suspendisse sed felis nec odio sodales malesuada sit amet sit amet erat. Proin congue lacus volutpat turpis malesuada, at elementum sapien ultricies.
+        <br><br>
+        </text>
+        <text id="Section4">
+        Mauris ullamcorper at diam quis varius. Phasellus libero ante, molestie a dictum at, blandit eget dui. Aenean quam nunc, dignissim eu dapibus ac, molestie sit amet nulla. Nam facilisis facilisis quam consequat gravida. Duis at nisi eget odio semper placerat. Sed ante metus, gravida imperdiet ullamcorper at, luctus nec est. Maecenas dictum gravida dui, eu volutpat erat sollicitudin sed. Vivamus tempor sit amet risus ac vehicula. Nullam id leo eget purus rutrum vulputate.
+        Sed non orci interdum, cursus metus sit amet, suscipit lectus. Ut orci ligula, ultrices sit amet fringilla in, vestibulum eu lacus. Nulla non convallis metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis euismod risus vitae neque cursus, et vulputate eros gravida. Aenean accumsan mauris sapien, a aliquam turpis vulputate consectetur. Sed posuere, erat a cursus tincidunt, tellus orci scelerisque nibh, eu bibendum mauris metus eget sapien. Aenean vel nisi ac turpis varius ornare. Suspendisse nulla urna, semper sed neque cursus, pulvinar dapibus diam. Ut eu congue diam.
+        <br><br>
+        </text>
+        
+        </p>
+    </div>
+    
+    <!-- Foundation js -->
+    <script>
+      $(document).foundation();
+    </script>
+    
+    <!-- Simple js script that causes header to disappear while scrolling down and reappear while scrolling up --> 
+    <script>
+        $(window).scroll(
+            {
+                previousTop: 0
+            }, 
+            function () {
+            var currentTop = $(window).scrollTop();
+            if (currentTop < this.previousTop) {
+                $("#header").show();
+            } else {
+                $("#header").hide();
+            }
+            this.previousTop = currentTop;
+        });
+    </script>
+  </body>
+</html>
